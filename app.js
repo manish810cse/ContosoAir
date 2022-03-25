@@ -27,6 +27,7 @@ app.engine('hbs', exphbs({
         i18n: (s, req) => new Handlebars.SafeString(req.data.root.__(s))
     }
 }));
+//testing
 app.set('view engine', 'hbs');
 
 app.use(favicon(__dirname + '/public/assets/favicon.ico'));
